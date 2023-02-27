@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/main.py
+src/jina_paddle_hackathon.egg-info/PKG-INFO
+src/jina_paddle_hackathon.egg-info/SOURCES.txt
+src/jina_paddle_hackathon.egg-info/dependency_links.txt
+src/jina_paddle_hackathon.egg-info/requires.txt
+src/jina_paddle_hackathon.egg-info/top_level.txt

@@ -1,0 +1,23 @@
+[tool.pdm]
+
+[project]
+name = "jina-paddle-hackathon"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "", email = "gonorth@qq.com"},
+]
+dependencies = [
+    "jina>=3.14.1",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm.scripts]
+dev = ""
+start = "python src/main.py"
+
+create_venv = "pdm venv create 3.8"
+activate_venv = "pdm venv activate in-project"
+prepare = {composite = ["create_venv", "activate_venv", "pdm install"]}
