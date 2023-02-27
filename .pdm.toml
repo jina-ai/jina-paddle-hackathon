@@ -1,2 +1,2 @@
 [python]
-path = ".\\.venv\\Scripts\\python.exe"
+path = "/home/xiafan/jina-paddle-hackathon/.venv/bin/python"
