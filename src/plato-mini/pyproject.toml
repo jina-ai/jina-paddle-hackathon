@@ -1,7 +1,7 @@
 [tool.pdm]
 
 [project]
-name = "jina-paddle-hackathon"
+name = "jina-paddle-hackathon-PlatoXL"
 version = "0.1.0"
 description = ""
 authors = [

@@ -1,0 +1,8 @@
+jtype: Executor
+py_modules:
+  - executor.py
+metas:
+  name: UIEExecutor
+  description: Paddle UIE Executor
+  url: https://github.com/jina-ai/jina-paddle-hackathon
+  keywords: ['nlp']
