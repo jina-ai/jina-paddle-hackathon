@@ -1,4 +1,4 @@
-jtype: Executor
+jtype: UIEExecutor
 py_modules:
   - executor.py
 metas:
