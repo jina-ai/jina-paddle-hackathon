@@ -4,6 +4,9 @@ from typing import List, Dict, Any
 from jina import Executor, requests, DocumentArray, Document, Deployment
 from typing import List, Dict
 
+import paddle
+
+paddle.set_default_dtype("float16")
 
 class PlatoXLExecutor(Executor):
     def __init__(self,  **kwargs):
