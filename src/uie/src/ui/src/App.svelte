@@ -8,8 +8,12 @@
 
   let openM = false
   let text: string = ''
-  let schema: { json: (string | { [key: string]: string[] })[] } = {
+  let schema: {
+    json?: (string | { [key: string]: string[] })[]
+    text?: string
+  } = {
     json: ['时间', '选手', '赛事名称'],
+    text: '["时间", "选手", "赛事名称"]',
   }
 
   let loading = false
@@ -17,20 +21,21 @@
   interface R {
     [key: string]: {
       text: string
-      start: number
-      end: number
       probability: number
+      relations?: R
     }[]
   }
 
   let results: R = {}
 
   const parseText = async () => {
+    console.log(schema)
+
     loading = true
     try {
       const { data } = await axios.post('http://localhost:12345/post', {
         data: [{ text }],
-        parameters: { schema: schema.json },
+        parameters: { schema: JSON.parse(schema.text) },
         execEndpoint: '/',
       })
       const r = data?.data[0].text
@@ -44,17 +49,21 @@
     const s: {
       meta: string
       text: string
-      start: number
-      end: number
       probability: number
     }[] = []
     for (const k in r) {
       const v = r[k]
+
       s.push(
-        ...v.map((v) => ({
-          ...v,
-          meta: k,
-        }))
+        ...v.map((v) => {
+          if (v.relations) {
+            s.push(...parseR(v.relations))
+          }
+          return {
+            ...v,
+            meta: k,
+          }
+        })
       )
     }
     return s
