@@ -1,8 +1,0 @@
-{
-    "editor.tabCompletion": "on",
-    "diffEditor.codeLens": true,
-    "python.formatting.provider": "autopep8",
-    "python.analysis.extraPaths": [
-        "./src/plato-mini/src"
-    ]
-}

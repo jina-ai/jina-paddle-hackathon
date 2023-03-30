@@ -5,4 +5,4 @@ metas:
   name: UIEExecutor
   description: Paddle UIE Executor
   url: https://github.com/jina-ai/jina-paddle-hackathon
-  keywords: ['nlp']
+  keywords: ['nlp', 'information extraction', 'paddlenlp', 'paddlepaddle', 'uie']

@@ -11,10 +11,9 @@ Schema = Union[
 
 
 class UIEExecutor(Executor):
-    def __init__(self,  **kwargs):
+    def __init__(self, schema = [], **kwargs):
         super().__init__(**kwargs)
-        self.uie = Taskflow('information_extraction',
-                            schema=['时间', '选手', '赛事名称'])
+        self.uie = Taskflow('information_extraction', schema=schema)
 
     @requests
     async def call_uie(self, docs, parameters: Dict[str, List[Schema]], **kwargs):
