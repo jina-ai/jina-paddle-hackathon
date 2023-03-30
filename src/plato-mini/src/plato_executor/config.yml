@@ -5,4 +5,4 @@ metas:
   name: PlatoXLExecutor
   description: Paddle Plato-Mini Executor
   url: https://github.com/jina-ai/jina-paddle-hackathon
-  keywords: ['nlp']
+  keywords: ['nlp', 'plato-mini', 'chatbot']
