@@ -1,2 +1,5 @@
 *egg-info
 **/*/__pycache__
+**/.vscode
+**/.pdm.toml
+**/.venv
