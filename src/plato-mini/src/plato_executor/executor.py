@@ -6,8 +6,9 @@ from typing import List, Dict
 
 import paddle
 
-paddle.set_default_dtype("float16")
-paddle.device.is_compiled_with_cuda()
+paddle.set_default_dtype("float32")
+if paddle.device.cuda.device_count() > 0:
+    paddle.device.set_device("cuda:0")
 
 
 class PlatoXLExecutor(Executor):

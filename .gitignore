@@ -3,3 +3,4 @@
 **/.vscode
 **/.pdm.toml
 **/.venv
+**/pdm.lock
