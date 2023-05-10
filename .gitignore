@@ -1,5 +1,6 @@
 *egg-info
 **/*/__pycache__
-.vscode
+**/.vscode
 **/.pdm.toml
+**/.venv
 **/pdm.lock
