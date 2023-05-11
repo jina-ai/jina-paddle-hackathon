@@ -1,7 +1,7 @@
 [tool.pdm]
 
 [project]
-name = "jina-paddle-hackathon-PlatoXL"
+name = "jina-paddle-hackathon-uie"
 version = "0.1.0"
 description = ""
 authors = [
@@ -14,7 +14,7 @@ dependencies = [
     "autopep8>=2.0.1",
     "pip>=23.0.1",
 ]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
 
@@ -22,6 +22,6 @@ license = {text = "MIT"}
 dev = ""
 start = "python src/flow.py"
 test = "python src/main.py"
-create_venv = "pdm venv create 3.10"
+create_venv = "pdm venv create 3.11"
 activate_venv = "pdm venv activate in-project"
 prepare = {composite = ["create_venv", "activate_venv", "pdm install"]}
