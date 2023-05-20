@@ -1,7 +1,7 @@
 # jina_chat
 
 MVP: Plato-mini model based Chatbot using Jina
-![](https://github.com/shaomaiguanguan/vacation_planner/blob/main/demo.gif)
+![](https://github.com/shaomaiguanguan/jina_chat/blob/main/platominichatbot.gif)
 
 ## Setup environments
 
