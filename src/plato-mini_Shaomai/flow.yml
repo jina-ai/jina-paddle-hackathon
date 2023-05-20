@@ -1,0 +1,8 @@
+jtype: Flow
+with:
+  protocol: [http, websocket, grpc]
+  port: [12345, 12346, 12347]
+executors:
+  - uses: PlatoXLExecutor
+    replicas: 1
+    py_modules: ./PlatoXLExecutor/executor.py

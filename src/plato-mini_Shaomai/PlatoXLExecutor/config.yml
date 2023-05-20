@@ -1,0 +1,8 @@
+jtype: PlatoXLExecutor
+py_modules:
+  - executor.py
+metas:
+  name: PlatoXLExecutor
+  description: Paddle Plato-Mini Executor
+  url: https://github.com/jina-ai/jina-paddle-hackathon
+  keywords: ["paddle", "plato-mini", "nlp", "chatbot"]
