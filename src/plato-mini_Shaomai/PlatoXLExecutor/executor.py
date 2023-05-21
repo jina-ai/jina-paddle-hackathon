@@ -5,6 +5,11 @@ from paddlenlp.transformers import (
     UnifiedTransformerTokenizer,
 )
 
+import paddle
+
+if paddle.device.cuda.device_count() > 0:
+    paddle.device.set_device("cuda:0")
+
 
 class PlatoXLExecutor(Executor):
     """"""
